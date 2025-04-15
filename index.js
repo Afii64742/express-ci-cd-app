@@ -8,6 +8,10 @@ app.get("/", (req, res)=>{
   res.send("Hello from Express CI-CD app");
 })
 
+app.get("/health", (req, res)=>{
+  res.send("Healthy");
+})
+
 app.listen(PORT, ()=>{
   console.log(`Server is running on port ${PORT}`);
 })
